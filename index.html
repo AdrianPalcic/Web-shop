@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c1d705d9bb.js" crossorigin="anonymous"></script>
+            <title>Biljke prodajem ajmooooooo!!!!</title>
+</head>
+<body>
+    <div class="header">
+        <p><i class="fa-sharp fa-solid fa-leaf fa-4x" style="color: #379a43;"></i><span>Manjo biljke</span></p>
+        <div class="search-container">
+           <a href="onama.html">O nama</a>
+
+        <input type="text" placeholder="Search..." id="search-bar">
+
+        <button id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+    </div> 
+
+    <div class="shopping-cart">
+            <div class="text">
+                <h2>Kosarica</h2>
+                <div>
+                <button id="clear-cart">Ocisti kolica</button>
+                <p>Kolicina: <span id="kolicina">0</span></p>
+                <p>Ukupna vrijednost kolica: <span id="ukupno">$0</span></p>
+            </div>
+            </div>
+        <div class="cart-container">
+            
+        </div>
+        <div class="shop-btn">
+        <button id="back-to-shop">Povratak u trgovinu</button>
+        <button id="openBuyFormBtn" class="hide">Idi na Kupnju</button>
+    </div>
+        <div class="buy-form">
+            <h2>Unesite svoje podatke</h2>
+            <form id="buy-form">
+                <label for="ime">Ime:</label><br>
+                <input type="text" id="ime" name="ime"><br>
+                <label for="Gil">Email</label><br>
+                <input type="email" id="Gil" name="Gil"><br>
+                <label for="adresa">Adresa:</label><br>
+                <input type="text" id="adresa" name="adresa"><br>
+                <label for="postanski">Poštanski Broj:</label><br>
+                <input type="number" id="postanski" name="postanski"><br>
+                <div class="cuz-i-need-to">
+                <button id="kupi">Kupi</button>
+                <p>Za platiti: <span id="za-platiti"></span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+       
+        <div class="left-bar">
+            <h1 class="gore">Kategorije</h1>
+            <div class="kategorije">
+                <div class="kat-opener" id="Sve">Sve</div>
+                <div class="kat-opener" id="voda">Voda</div>
+                    <div class="hide-show" id="voda">
+                    <span class="kat">Mv - Malo Vode</span>
+                    <span class="kat">Sv - Srednje Vode</span>
+                    <span class="kat">Pv - Puno Vode</span>
+                
+                </div>
+                <div class="kat-opener" id="svjetlost">Svjetlost</div>
+                    <div class="hide-show" id="svjetlost">
+                    <span class="kat">Ms - Malo Svjetlosti</span>
+                    <span class="kat">Ss - Srednje Svjetlosti</span>
+                    <span class="kat">Ps - Puno Svjetlosti</span>
+                </div>
+                <div class="kat-opener" id="temp">Temperatura</div>
+                    <div class="hide-show" id="temp">
+                    <span class="kat">Nt - Niska Temperatura</span>
+                    <span class="kat">St - Srednja Temperatura</span>
+                    <span class="kat">Vt - Visoka Temperatura</span>
+                        
+                </div>
+                <div class="kat-opener" id="velicina">Veličina</div>
+                    <div class="hide-show" id="velicina">
+                        <span class="kat">m - Mala</span>
+                        <span class="kat">s - Srednja</span>
+                        <span class="kat">v - Velika</span>
+                    </div>
+
+            </div>
+            <div class="price-range">
+                
+            $0 <input type="range" id="rangeOfPrice" name="priceRange" min="0" max="100"  /> $100<br>
+            <label for="rangeOfPrice">Price Range</label>
+            </div>
+        </div>
+        <div class="plant-container">
+            <div class="plants" id="plants">
+
+            </div>
+    </div>
+    </div>
+    <footer>
+        <div class="info">
+            <h3>INFO</h3>
+            <p><a href="onama.html">O nama</a></p>
+        </div>
+        <div class="social-media">
+            <h3>Look us up on:</h3>
+            <div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        </div>
+        <div class="contact">
+            <h3>Contact us:</h3>
+            <form method="post">
+                <div>
+                <label for="mail">Enter your e-mail:</label>
+                    <input type="email" id="mail" placeholder="manjo.manjic@gmail.com">
+                </div>
+                <div>
+                <label for="question">Do you have any questions?</label>
+                <textarea id="question" placeholder="Write your question here..." maxlength="500"></textarea>
+                <button id="submit-question" type="button"></button>
+            </div>
+            </form>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
